@@ -123,30 +123,199 @@ nav .menu{
   background: white;
   color: black;
 }
-    </style>
-</head>
-<body>
-   <!DOCTYPE html>
 
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Website Layout | CodingLab</title> 
- 
-   </head>
-<body>
+
+.header {
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.small-title {
+  color: #0077b6;
+  font-size: 12px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.header h1 {
+  font-size: 26px;
+  margin: 10px 0;
+}
+
+.header .desc {
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 15px;
+  color: #444;
+}
+
+.packages {
+  text-align: center;
+  background: #022c43;
+  color: #fff;
+  padding: 40px 20px;
+}
+
+.packages h2 {
+  margin: 0;
+}
+
+.packages .note {
+  font-size: 12px;
+  margin-bottom: 30px;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  background: #fff;
+  color: #222;
+  width: 250px;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.business-card h3 {
+  background: #f4a300;
+  color: #222;
+  padding: 10px 0;
+  border-radius: 6px 6px 0 0;
+}
+
+.ecommerce-card h3 {
+  background: #0096c7;
+  color: #fff;
+  padding: 10px 0;
+  border-radius: 6px 6px 0 0;
+}
+
+.price {
+  font-size: 28px;
+  margin: 15px 0;
+}
+
+.price sup {
+  font-size: 14px;
+}
+
+.card ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.card ul li {
+  margin: 8px 0;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 5px;
+}
+
+.card button {
+  background: #f4a300;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  color: #222;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.ecommerce-card button {
+  background: #0096c7;
+  color: #fff;
+}
+
+.card button:hover {
+  opacity: 0.9;
+}
+
+.features {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.features h3 {
+  margin: 0 0 10px 0;
+}
+
+.features p {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.features ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 400px;
+}
+
+.features ul li {
+  text-align: left;
+  padding: 5px 0;
+}
+
+.categories-section {
+  padding: 30px;
+}
+
+.categories-section h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 15px;
+}
+
+.category-item {
+  background: #fff;
+  border: 1px solid #eee;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.category-item img {
+  width: 100%;
+  height: 100px;
+  object-fit: contain;
+  margin-bottom: 8px;
+}
+
+.category-item p {
+  font-size: 14px;
+  color: #444;
+  margin: 0;
+}
+
+.category-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+    </style>
+  
   <nav>
     <div class="menu">
       <div class="logo">
-        <a href="#">CodingLab</a>
+        <a href="#">Store</a>
       </div>
       <ul>
         <li><a href="#">Home</a></li>
         <li><a href="#">About</a></li>
-        <li><a href="#">Services</a></li>
+        <li><a href="#">Product</a></li>
         <li><a href="#">Contact</a></li>
-        <li><a href="#">Feedback</a></li>
       </ul>
     </div>
   </nav>
@@ -159,8 +328,136 @@ nav .menu{
       <button>Subscribe</button>
     </div>
   </div>
-  <h1>hello</h1>
-</body>
-</html>
+  
+  <section class="header">
+    <p class="small-title">ELEVATE YOUR BRAND: PROFESSIONALLY CRAFTED WEBSITE FOR YOUR BUSINESS</p>
+    <h1>LET’S BUILD AN EXCEPTIONAL WEBSITE TOGETHER.</h1>
+    <p class="desc">We are the Make Lots Foundation. We design professional websites for those in need. We’re offering our design services at an affordable rate to support small businesses in building their online presence.</p>
+  </section>
+
+  <section class="packages">
+    <h2>PLEASE SELECT YOUR PACKAGE</h2>
+    <p class="note">Once your order is placed, we’ll reach out to you shortly.</p>
+    <div class="cards-container">
+      <div class="card business-card">
+        <h3><em>BUSINESS PRO</em><br>WEBSITE</h3>
+        <p class="price">$99<sup>.99</sup></p>
+        <ul>
+          <li>5-Page Website</li>
+          <li>Domain Registration</li>
+          <li>Web Hosting*</li>
+          <li>Business Email</li>
+          <li>SEO Optimized Design</li>
+        </ul>
+        <button>START NOW</button>
+      </div>
+
+      <div class="card ecommerce-card">
+        <h3><em>E-COMMERCE</em><br>WEBSITE</h3>
+        <p class="price">$199<sup>.99</sup></p>
+        <ul>
+          <li>10 Products Listed</li>
+          <li>Domain Registration</li>
+          <li>Web Hosting*</li>
+          <li>Business Email</li>
+          <li>SEO Optimized Design</li>
+        </ul>
+        <button>START NOW</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="features">
+    <h3>CRAFTING OUTSTANDING WEB EXPERIENCES</h3>
+    <p>RESPONSIVE, USER-FRIENDLY, VISUALLY STUNNING DESIGNS</p>
+    <ul>
+      <li>✔ Responsive Layouts</li>
+      <li>✔ Intuitive User Experience</li>
+      <li>✔ Visually Striking Designs</li>
+      <li>✔ Seamless Navigation</li>
+      <li>✔ Accessible Content</li>
+      <li>✔ Fast Loading Times</li>
+      <li>✔ Engaging Interactions</li>
+      <li>✔ Cross-Browser Compatibility</li>
+    </ul>
+  </section>
+  
+  <section class="categories-section">
+    <h2>Categories</h2>
+    <div class="categories-grid">
+      <div class="category-item">
+        <img src="https://icon2.cleanpng.com/lnd/20240907/fz/6c1e8522116e98196e56b57f5f2e09.webp" alt="3D Printers">
+        <p>3D Printers</p>
+      </div>
+      <div class="category-item">
+        <img src="https://icon2.cleanpng.com/20180619/peo/kisspng-sujuk-sausage-making-salami-machine-saucisse-5b2904b06b2cb4.579253761529414832439.jpg" alt="Pasta Tools">
+        <p>Pasta, Noodle & Pizza Tools</p>
+      </div>
+      <div class="category-item">
+        <img src="https://icon2.cleanpng.com/20180421/ttw/kisspng-animation-miyagi-university-5adbbd1367ed37.3513973415243502274257.jpg" alt="SIM Tools">
+        <p>SIM Tools</p>
+      </div>
+      <div class="category-item">
+        <img src="https://icon2.cleanpng.com/20180421/ttw/kisspng-animation-miyagi-university-5adbbd1367ed37.3513973415243502274257.jpg" alt="Screen Protectors">
+        <p>Screen Protectors</p>
+      </div>
+      <div class="category-item">
+        <img src="https://icon2.cleanpng.com/20171220/fjw/avi3c9wbm.webp" alt="Casserole Pots">
+        <p>Casserole Pots</p>
+      </div>
+      <div class="category-item">
+        <img src="https://icon2.cleanpng.com/20240214/kpg/transparent-clothing-hoodie-zip-front-hoodie-hooded-sweatshirt-blue-hoodie-with-zip-and-black-1710877377854.webp" alt="Hoodies">
+        <p>Hoodies & Sweatshirts</p>
+      </div>
+      <div class="category-item">
+        <img src="https://icon2.cleanpng.com/20180329/toq/avdwx1ek6.webp" alt="Toy Boxes">
+        <p>Toy Boxes & Organisers</p>
+      </div>
+      <div class="category-item">
+        <img src="https://icon2.cleanpng.com/20240311/urk/transparent-boy-playing-with-dog-boy-dog-park-play-boy-playing-with-dog-in-park-1710841832996.webp" alt="Dog Clippers">
+        <p>Dog & Cat Electric Clippers</p>
+      </div>
+      <div class="category-item">
+        <img src="https://icon2.cleanpng.com/20180516/kiw/kisspng-chiavari-chair-table-bar-stool-5afcbb02cddd33.2801733315265123868432.jpg" alt="Dining Sets">
+        <p>Dining Sets</p>
+      </div>
+      <div class="category-item">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJQAAACUCAMAAABC4vDmAAAAaVBMVEX///8AAAD7+/v+/v78/Pz9/f1iYmKwsLDQ0NB2dnbY2Nj4+Pj09PTx8fEUFBTFxcXr6+s9PT2Hh4eqqqqcnJxFRUUMDAyQkJDg4OAqKipRUVG2trYxMTF/f382NjZYWFhtbW0bGxsiIiJS4OOKAAAQw0lEQVR4nK1c63ryIBLGEDTm8CWaqKnWqr3/i9zADDAck+5ufvi0EGB45zygjDPGRCE/y5LJT7F88MI2C2hWn4XfSZtLbjtL08lJpyi9CaEzXMeniUyUoknExjBKU0Dw3zap/l19KySVjFHYMtY0kWVTUBTZzv8XTs10v09NADwZw33eZYQhj1Oq08OpeFx3y3N9NE5nEtsAJ2+d/xUn2VDfd/jcaxAJMgZWSE7o6QU2p3FKQu02z8cded7z33Hy1/nLuxEF4Ky5fe2c5/fWMOGNceTJ78zhtJkmsg9WPjyS5PN1EH/AKSK3m3AKDKo2J/WLkELIu1eMJXDKAq+bUzit650rTOe2OZN/j/MaTnEBhWZKYpymoBOaOypMr0E2DXsqWh0TUb3jeZy0pG/HyU7x+LYEXHo9pr/Y1u8D+y/kiSNNIU6r8lTdCSaHxnSy5uCJVtwHZ3ESMZzKNZGcqfTcBheQ4UY6n3MGpwg/BDZncQppEmyYyKrKVrq2hs1v8sI0LNqXwClKk9G+DXxGgkNhis3viNaDJSZM4MSpOcnzTkHBRH2yy/0cCkaCN7I9VhzoezXP4xQwayuf1bsDtUxSmFJjPNE6Krmjm3T44TMrjlPgntRnR9eRwpSKfSM7OHc44RZdWpVx23kggvLTR3fjhT094eHl4CCQwWkBMRKruJqAnRUh6TQyZ/Go61RojYSsU7U5/kjpA11lYcWTGp8hznUaq0DnYj/OwcBVnLRGezR54WdHLdN+iPMhpVrUISrl2BCAr+LE2YNw7uMEJXmcMOZi1S8RrYeCwY2XfeX35SnYs+iIm5M+1snvVnFS22MHYnDv3RpOxVqOUDJiB87DSpKcCPBLR7RuaZz0PtZi38Lw7jQk869UCkQ6B6OHl0JkcdIpVsY+CSOnv89W6tNf5Ml2tk8jWHtimxPKn7WvsqGiytOazhRO0Ziupeor7W5eDJg3UWDHBe9pWPAw/u4POFH1/Uaa/JHlH3BSzSONxntvHys4Lc6GpjwjW8VJjonEvr7jDO1yOBHoqm9c+OILrs5Q30pFggaxKedcmmsaTY7dNpyWwGIkw3ZnxtL+jprsdZxQWfofO/vPo2CBXkdyzsfPziUqFvtGgt1NOKnmYvwQ0apC2fBxql479znzOE6FixOLLO6mAdAMaA1nIh/HIY/TcLQvfy6afWl+EGGI4xQVY6kVFYkmr5O0WgmcmumfffNdHwxRCEgUJ7/AEeQIAU4Y5FKr9f0onDEmSCxoyvPdczYaQV/HqeARvQ7sq+vYaLinRcuZf8GThlC759KoiQpp8uXJFjiyOHnO1qnbLawZXJy4mzBI4bNE8cBfxA1SDqeoUnpL7j5YFEbLVE6/uyRRbBNOzPs3UXKgnUDUkYZ+D+MYHMt0P0aIiiSZgYz4UKzhpIk68JGYhzeIFqscu18ekKjSEpXghy8j66Gko/RI1OJYuzPRelm5o5W9q8w+RyRKWKJC3sX4kbAbaeOliVqcbU207DOORJj2CjpNlGVfXJ6Cdf4ccmuiVHNPRIsIE8RMhKhe/TUxf+9RnIikbyyYIVFPGMnaMaRpbCFAQZMmiWrkqJ+OmQlzODHmicx6KImC89ULsE8FdYhSmBrMwnoMDY8q/OrPB6VlK3KrOjfaJxLwGWnGIh53ogFZ5lRv23LeUY/ciNPy9t9wWpzlwVJwnrFZi5YUJjWGhqqHzSm16TQ1DP2sBg0Elx8MuTFdkWGDGjMSE/oiJzUpvSvJ8rbAscS7/Tj1c8SNB/m8l5xwmL94YOV6wY2QdILaQR4n1vTT8zlVDbOcXiYajsrIfD2VguQNqleFQdFCkRFebbhjfrQZiX31eeG+ZoSm2tjmf30yGaDNTnpzHmwc65Q6l44wpS48IjkjW1QGTp0hs5nU26516tCKTsSdM4fvsQBAGqe8UiVrGHRC9iDb+K0hxVroooDvvkmdLpubh3kvFSaZS+dqGGg5OJudUOeiIFm65p3z3NZwwphuEa2PHfWaB6KWn0lVoSKBayCgb3d1tbvlXZSPt+6uN9d6nFIoeeBIZjXnlGYPmXe9IRVH1Bjw9W8mUOLurVg3dKAmvPZzux0IE2PxYNqvGuiy1UNj82qUeA4XxMfYxRtz9S6bc1LRUlIBZzHbcNJOS8ZcIEWXQZUXkSiJeI0Tz3+o9SwpHhFVGbGLOE6xTWLx61cqlyZqYVMpyhfCs0gdMvDV8I04qWWtaD0Ht8awEvu2iLI6jTDsU3ECTPkjN1fiW1Mid46fc2qbLO9vRJPLlNKgpX2pOcDEnYH5iOG1sn/vdrm6sp/rqOb+eOz9MWu5FNqiq7qLUkFYhikI41a8uSb+LWK2wItNnVyNB9iu4VTsNVvkAwv/YxCh60z83kh9aH+1jiZw2lDQz+BEr+NgJH1SRLR3zT08Q+61zik+EAaCI3AOGXycNpzJUX5z+FeZIlxIMq/Qit+bFAuNwg2CKzTsSuLm6Xk8P0oW0aFN518+Tqwbn8fjWQoOP9p1lreBe5eO6RQLTdhJ/im4ZmBvDqD+HcrE/YKtKRC6wUZHKadZ+5dvHPODFOp0RuvcPzwlxCj8mxxiwyGw+B9xIqdsvzrXeUCn0T2bYokPqoFatvQLKwo3HurdxnNOpKk8RKZ94hjg3hdMhRNp/YND1iEyeveE5CJr5IOYjuDUvGOzdthJiqKixD2jytU4fyTtXdxazyKqteGcUzU/rrE5D7gPo3swFdZ9QXxu2NjYgGQ/2dluImK8MjgJgxO5W/V1sEHYqwFhsLoHY8AEaf3TgmOC0b2AOgA837Uvxll5MjhVtmgkOWQmHCBPLQvA5EhSLBtDfCqEwpyHTsvfwob2nymff4UgSpxstUEmS4WRjhvDrLvXuufQxIpfpAGhQKu/gxR4sEIKNzm3lbJAkypiWVr1ChL1arWnAPP1VXI9Bv0pMPpS6PkrvRm5irV6i4WRhdetOHHW3Qzrrgc8HUY2VBqB5oSc1cKga5/G/+mjiKPBWy07kzyPnGLlcXLuWu0H7ERFPBo2Ed1jOsVS2+p+EBkdPiOV1wnZ3JDc91JFjGOYmzuXXaYC65mazt4oDcx8Igd2GmpA5tLo3RbaLLz0xduapAjnlq3i1BHPcJ9xHYP4y1w/QO49NU7MSq31f0i/OdH+fWCxhqZ5d3NHOKQMcKJ7UCfikqbHRzdVJphGv1czYhFAJEVj9E+LmZWHJ5yyL3MSyary9qm3b+7h3LlkrcUuWOfLFIIKEuSC0T2VOjhkxNvca1y8IffanLN8Hydr2+69OicRgl53OhgjXBZamu0mrZ+w+mfgIyZmhEB8Cays3yHOMInTB4t9i4eyyF9qYjlmPZkF3iYDraGY6XNOive+0xMNhod1KvY18vjqMDxkpP7xbOkY5FDLiamz4gUE3N2vBFjvjqGqNKXaOuiykR+rDPoiw4TCIIS96/Jxr85h1PIkvt4svsiQ0T+ac7LZ7HBkJtHS0vYuYwGfzp2k5GgmmQhPXQojY5x8z8NJ+rsP7I65+V2hcSF1D0PVI4KTIcDeQWFGlSeSGalP1L2WKI0T3gJ3fxgze0YJ+UZRNM3GXnwP3MeJDVhjnKiPBDac0N9ZmtiX3bBRGupPUY0Hj6bFB8ko4capsPG3Ax8JGkySzanfVrt4dgFNRveoIpNUVzRG/4Jcan7MHqndl9mCExjrCH9hiOt4ht69YqiaNXcax7g4sGn94xQnLXte/KRxvfk5wk0LVOAMeWDTRHNH3fNoItaY1l+yxU5yHnLqBOGdYB3o/gvtk59AeH7bZCy0030XWTJZMcvlCL0VB5JLmdaAplieCvry0zmHAC4UyOHfKE5B3mLMntOMISz4Oz82DQ5bP1oEnHWceqbVv3xuDiDiNq/agaoxQi+zhpMaQ3SPEuwuK3SNL1HOcUmtgYCZeghY5lOv4QSk6sqmt3eCk/wE66OqoesXFtCEwKVurPU8jIrn5Um9jbp39NZx0TTuvd+Ak9nCkTTj3t9rOMEObLUgc4YsOLqI4waczB2Il23mDHzxuAWnEl9eMob4GbKBApP+mW2oYSCu99ZeucAktmI5+6TvX5vcMnqGTCjDF18ty+idHgMe5WfmphPDpoF72EYKWrqqKS2nxw9/WYTUSkWu1gNE/cJ3MlVz/YU2JY2T5h1/6ZVCYfOciDmfuZU2pkvVejqVkn8q21mBlSBnAyl50lnhZ+YRmvy72jocUyFitobBO6UWKleEBiz6/HYreidsVjgyv7NgkTujOpqWF33p5vxcSohWvXqtrEUAor66PE5MmLIHnMt49oMeV6GQzeZ0el8zltszJEALUqZTI8XjYzA2tTWGSxehKVofnz96zGcskocMhY4qZKqhFweZ+nRUS33j0pFaI6WJHLB4OEGcaZPQF6pWVDaAqA8JvDVRGZx6e5F8H8UJGOrTtNhAW4a/TkVMntS2rExpx2NkKoIT7MOmt9dz6dNUuimWz57esFAWEuJBg8CTzd6QilncqU1hS2C61DEZZ1jg8HGCPZO6z+fhdSL7OZa2ewsfuNgly47jZMsJ16kJbAHeY+Dp75g6FzJiOeei7s0eew0gQNSriV9NsWUcedcmoEk7dZagCfpNrflTMZ93cllDlJkfwql9E5VxU4oxFjDCOwyoogGAYo+tBd0J+204UkBAdbCdmqgYTkIjv58jNJURmhLnUqZsOkansERhzAhlhHcRswWTldDk2QA4q2RpVzsplIO74D5OyytHTZSOGfFmbhlZFpOfa+/xI7xAHMHJj30nPVfgBjkGvwc7Eoh6ikg40hvI8zgVPClP1p92HzXZZLdlsT3jOgZE/N5AqKulrbeu4ITalz/Lx+LA0dJkp7ghvWZxfRs+IsaAahj7UlsQK3DEc84DClV4FxJ3f7NjbrbBC1zFC1lNaQounmmaVs85Qc0vpUjd8Xua+Q10IRR4jeYRBODrl+QDnISW0FfkrB25NdmYcYzaD/UJmlpZEKMyzmyBI7BPYc4ZfC3PZFSnwY7pJJOWBDu0aaz+RVBjODk0bTnn5N3t3ynxtbzh/HOcqbAN034cwrBNjpnPb/J7D4kLMIrgLTmneYibhXhX1cucMaoBYmz6Oy4lN5Os8Q6ehH3CVUq27Sm2vlgGIEZoikJtw4Xm8N6vPEdz97U6rr27H5s1nMqVGgZ3voecfnoIgfr1N8lxVeQXEBCYrN7J+9db1tld5EDOLutv7mROn8Wp1HFN+mJbvb7IDm6tLaj+W39zh5dX4raApFi5ez2biZJj/kBUQsZtMcHXUWpQNxMlx2wnKsM7pCmNk65XfY2H+PO4XYEo9bYi6npLvHvA7zPXed45Z8iMBZc3TWXo1LDEUyNRagdAVJV6F+/Z1HmcivUfWkOi2pQ/qpAo2UmIik7YaqKStoCRAkcCJ6kAmqjE9/8JUaK0RMV/hMUQlceJsYyMKyNvkIrSVFii5MyaqMQPw1CicjTZfxM/jEWICg8MCmGIUp2GqChNnBCVD8DzOJlj1jaKk9Dsu4IYXImghzIoLFFZ3hUrOOlzzksCJ619F9A+5Wbg0nRUL8ANDXmc/BQrUsOAEvYhGQdC/wg7UCnGPkkT9js/shlV/qQt0M3N7f7K/J4Ea873u/pag9TVx+t+bpI0qf5bI9Zoouz3E/cCE/e2YJG8yPrtVllWbG69+WnOuTQv/as4sWCKqOgnO607T/2G4XrsG06Y4V2QO5ceY5Op7ooYr9FU/ge0h9soUob2bAAAAABJRU5ErkJggg==" alt="Donate">
+        <p>Donate to Educate</p>
+      </div>
+      <div class="category-item">
+        <img src="https://icon2.cleanpng.com/20231019/ol/transparent-wright-brothers-day-pilot-aviator-pilot-jacket-avi-1711055843861.webp" alt="Others">
+        <p>Others</p>
+      </div>
+      <div class="category-item">
+        <img src="https://icon2.cleanpng.com/20180309/rwq/kisspng-hair-dryer-beauty-parlour-estudante-student-barber-shop-hair-dryer-thermostat-5aa33d1ec61e76.8309305015206474548115.jpg" alt="Air Dryers">
+        <p>Air Dryers, Blowers & Blades</p>
+      </div>
+      <div class="category-item">
+        <img src="https://icon2.cleanpng.com/20180611/vat/kisspng-ac-adapter-hdmi-laptop-scart-socket-wrench-5b1e467d632d59.7861970515287107814062.jpg" alt="TV Adapters">
+        <p>TV Adapters</p>
+      </div>
+      <div class="category-item">
+        <img src="https://icon2.cleanpng.com/20180928/lwo/kisspng-meble-kuchenne-island-kitchen-furniture-hotel-shabby-chic-bett-kaufen-bett-shabby-chic-bett-sha-1713929134264.webp" alt="Kitchen Islands">
+        <p>Kitchen Islands</p>
+      </div>
+      <div class="category-item">
+        <img src="https://icon2.cleanpng.com/20180806/pov/kisspng-euro-truck-simulator-2-scandinavia-poland-video-g-euro-truck-simulator-2-skandynawia-pc-cdp-pl-5b67ced4559724.5348088215335298123506.jpg" alt="PC Games">
+        <p>PC Games</p>
+      </div>
+      <div class="category-item">
+        <img src="https://icon2.cleanpng.com/20240220/fya/transparent-towels-fashion-clothing-style-colorful-colorful-pile-of-clothes-on-black-1710871961879.webp" alt="Towels">
+        <p>Towels</p>
+      </div>
+       <div class="category-item">
+        <img src="data:image/png;base64,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" alt="Towels">
+        <p>haircomb</p>
+      </div>
+       <div class="category-item">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJQAAACUCAMAAABC4vDmAAAAY1BMVEX///8AAABcXFyJiYnFxcXw8PDb29tLS0v29vbOzs7V1dXz8/OgoKD7+/sfHx8lJSXq6up+fn4ZGRl1dXU7Ozu/v7/h4eFERESxsbFsbGwQEBAJCQmXl5c0NDS4uLhQUFAsLCya6eeqAAAFIElEQVR4nO2c2YKqMAyGqQICgqyCgojv/5SDrGVpCtPNC/674YD9TknTJG3RNEiokQveI11FA/VSjTFV0kCFqjGmOjVQT081x0Sv1qgM1RwTPVqot2qOicxPA1VeVYNM1BoVCn/Kqu4tFHqmqklwZR2VH5vWz3SXXaBBVei6j7v+lV3LSY2rpYbKRTMVRZHXiqKbXybJKX44hvwuXFAtFb+lD8/7jY7lu7KxgjOdCmWmZCoteF18GlV+l02lac7bjTMYy5ZPVcvzLCN1HLuV/nidw1M2dmH5Mx7WMN9VT/VUDYPLSToqRzUJrqCztrNqkImCFioJVINMFP7g+9PMFuqhmmOizqp+K/Gx2hg1Uc0xVdxA+aoxGg2hVJjfvlpcly8zHCw7SBv1fzqxroTIedWhMilgseogLLZlR8v2KaptKCImz5f6X4vLQ+ZrvHeT8InYaJfxRw9ZIWn67OOCmHjPENonUsKsK5ZKkJ3le7zpKX5GTJOxOSAs0LG7StEVEjdH61CGG5+xsYhD1feJHIfWLLEZodJvWJyPE/IUClXialzdDLcCFZTthSF2mUGhUlQKFsyZRqh43iNzKOSLibUW/TRCBcOV/gUuoNBHBJWxZBqgRlPrg5clFPIFpGDxspkeyqjGSyYRCiXcrf210koPZWKXXDIUqjgzrTbSQ2Huu3fy4P2cFERQI7j3OlkAFOJaBXmut9FBYSaFygCCKjnOg4/1JnoovE4UgVAc8x3jA0Ph82EOQ/HLV0NSCx3U5FoKQ2WcgtGA1EAPhY8CWk/xsvU1tzmBwkOsGw2q5NJVKbne2UHhYzMzKFCIS/K16ssnUHitPfZoUCcOTFZC/v0Oyl5eAqBuHAYg8PM9QYq5jDv9KQ4r5WQzH6C80ahyiw7FXga5Am9vmGDHGbn32BAUYg6s9AL49WHWHzxVH4qDUMzvD1zFGqDu8wsgFPP4I8QHM4YuesmGv0GojDFW8HLo17Gg7VW72HCsZoBQBWN9gTzvzaA0w8T//yAUaxXZ2Qw11R18jnGjESm8a0UO2eDnGJeW4FXRmDjjw0vPjGkNMb5rlBGrKfBzjD4dmmQQsGEImgfq4ccGBbop8hJtQFlzZoNaKSDgIlk6PPgEQxHyOI/y1sVCETZ8wS5XONRntU5OsUTRUKvO2YbCHRlQxTI56Qug6qCQv/BV1JcnHgpFU2cVVPRHxEMhHx+CzhYmCVAIXfTWX1k2POdJhep231xpPlMyVJPGGJTNTGqgLgfUAXVAHVAH1AF1QB1QB9QBdUAdUIC+i3jBr2Uz35L6m36bXKg81N0NZ5HkQu3TASUHanPJQibUxtLOTn3YoLYco9uvjN4wJGD7BoMYF5Fp6xn/E+PePJPewj/EuFxrCYFi3EPl0Qv1+8W8BUfE8KtYt6fDK9T/E/ORSZO0c5FB7NvyNgdu28W+sXnDOfKd4nDglbrKuVs8jiZuWCnbJS77h3mPP/KxpD3ibOp8Nlrz7So+HQXu9NytnNc2a55dxamjNJ7pw43feT9+URXPj1nxcus8NjOP2lxPARXxPWQUcAkWeJ8D5pFB8P+eArtZiTiOz5oC8jXyXmwpPHNgThBLX5HPUbPq/3ZF3qbKrvv66TWqxH7HxPyXFxX+nYL95i7hHLlm78vkczkflPRc6oefBkWxtC85pFudw1Pq52csl27xSSj9Mz1XHa4cV29FXw7Sz6e1kOZWhfI/CIfJS23djavE/x5lKW7l5fl62yYb0R+OoUZmtCjHdAAAAABJRU5ErkJggg==" alt="Towels">
+        <p>mouse</p>
+      </div>
+    </div>
+  </section>
 </body>
 </html>
